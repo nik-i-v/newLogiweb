@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                template="/WEB-INF/templates/admin.xhtml">
+    <ui:define name="content">
+        <div class="all_box">
+            <div class="home_box">
+                <div class="align_left">
+<p>Please add goods to order.</p>
+                    <h:form rendered="#{checkUser.hasApplicationRole('admin')}">
+                        <h:panelGroup rendered="#{empty createdOrderNumber}">
+                            <em>No created orders.</em>
+                        </h:panelGroup>
+                        <h:form id="orderActivity" rendered="#{not empty createdOrderNumber}">
+                            <table>
+                                <tr>
+                                    <td><h:outputLabel for="orderNumber" value="Order:"/></td>
+                                    <td><h:selectOneMenu id="orderNumber" value="#{modifyOrder.orderInfo.orderNumber}">
+                                        <f:selectItems value="#{orderAction.createdOrderNumber}"/></h:selectOneMenu>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><h:outputLabel for="name" value="Name:"/></td>
+                                    <td><h:inputText id="name" value="#{modifyOrder.orderInfo.name}"
+                                                     validatorMessage="Invalid format"
+                                                     requiredMessage="Invalid format"
+                                                     converterMessage="Invalid format"
+                                                     required="true" style="width: 100px">
+                                        <f:validator validatorId="nameValidator"/>
+                                    </h:inputText></td>
+                                </tr>
+                                <tr><td></td><td><h:message for="name" errorClass="invalid"/></td></tr>
+                                <tr>
+                                    <td><h:outputLabel for="gpsLat" value="Latitude:"/></td>
+                                    <td><h:inputText id="gpsLat" value="#{modifyOrder.orderInfo.gpsLat}"
+                                                     validatorMessage="Invalid format"
+                                                     requiredMessage="Invalid format"
+                                                     converterMessage="Invalid format"
+                                                     required="true"
+                                                     style="width: 100px">
+                                        <f:convertNumber integerOnly="true" maxFractionDigits="2" maxIntegerDigits="3"/>
+                                    </h:inputText></td>
+                                </tr>
+                                <tr><td></td><td><h:message for="gpsLat" errorClass="invalid"/></td></tr>
+                                <tr>
+                                    <td><h:outputLabel for="gpsLong" value="Longitude:"/></td>
+                                    <td><h:inputText id="gpsLong" value="#{modifyOrder.orderInfo.gpsLong}"
+                                                     validatorMessage="Invalid format"
+                                                     requiredMessage="Invalid format"
+                                                     converterMessage="Invalid format"
+                                                     required="true"
+                                                     style="width: 100px">
+                                        <f:convertNumber integerOnly="true" maxFractionDigits="2" maxIntegerDigits="3"/>
+                                    </h:inputText></td>
+                                </tr>
+                                <tr><td></td><td><h:message for="gpsLong" errorClass="invalid"/></td></tr>
+                                <tr>
+                                    <td><h:outputLabel for="weight" value="Weight:"/></td>
+                                    <td><h:inputText id="weight" value="#{modifyOrder.orderInfo.weight}"
+                                                     validatorMessage="Invalid format"
+                                                     requiredMessage="Invalid format"
+                                                     converterMessage="Invalid format"
+                                                     required="true"
+                                                     style="width: 100px">
+                                        <f:convertNumber integerOnly="true" maxFractionDigits="2" maxIntegerDigits="5"/>
+                                    </h:inputText></td>
+                                </tr>
+                                <tr><td></td><td><h:message for="weight" errorClass="invalid"/></td></tr>
+                            </table>
+                            <h:commandButton id="addG" value="Add goods" styleClass="but"
+                                             action="#{modifyOrder.addGoods}"
+                                             ajax="true" rendered="true"/>
+                            <h:messages styleClass="messages" errorClass="invalid" infoClass="valid" warnClass="warning"
+                                        globalOnly="true"/>
+
+                        </h:form>
+                        <div id="buttons_back">
+                            <a href="/lw/admin/orders.jsf" class="but" title="">Back</a>
+                        </div>
+                    </h:form>
+                </div>
+            </div>
+            <div class="home_box">
+                <div class="order_buttons">
+                    <h:form rendered="#{checkUser.hasApplicationRole('admin')}">
+                        <h:panelGroup rendered="#{empty orders}">
+                            <em>No orders.</em>
+                        </h:panelGroup>
+                        <h:dataTable var="_order" value="#{orders}" rendered="#{not empty orders}"
+                                     styleClass="simpletablestyle" headerClass="headerTable" rowClasses="rowTable"
+                                     columnClasses="columnTable, firstColumnTable, secondColumnTable, thirdColumnTable"
+                                     border="1">
+                            <h:column>
+                                <f:facet name="header">Number</f:facet>
+                                #{_order.id}
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Status</f:facet>
+
+                                <div class="order_status_format"> #{_order.orderStatus.status}</div>
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Fura</f:facet>
+
+                                <div class="fura_format"> #{_order.fura.furaNumber}</div>
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">
+                                    <div class="drivers_format">Drivers</div>
+                                </f:facet>
+                                <h:dataTable var="_drivers" value="#{_order.driverShift}" styleClass="nestedTable">
+                                    <h:column>
+                                        <div class="drivers_format">#{_drivers.drivers.license}</div>
+                                    </h:column>
+                                </h:dataTable>
+                            </h:column>
+                            <h:column>
+                                <f:facet name="header">Goods
+                                    <table class="nested_header">
+                                        <tr>
+                                            <td class="col1">
+                                                <div class="special_width_head">Name</div>
+                                            </td>
+                                            <td class="col1">
+                                                <div class="special_width_head">GPS Latitude</div>
+                                            </td>
+                                            <td class="col1">
+                                                <div class="special_width_head">GPS Longitude</div>
+                                            </td>
+                                            <td class="col1">
+                                                <div class="special_width_head">Weight</div>
+                                            </td>
+                                            <td class="col1">
+                                                <div class="special_width_head">Status</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </f:facet>
+                                <h:dataTable var="_goods" value="#{_order.orderStatus.orderInfo}"
+                                             styleClass="nestedTable"
+                                             columnClasses="columnTable1, firstColumnTable1, secondColumnTable1, thirdColumnTable1, lastColumnTable1"
+                                             rendered="#{not empty _order.orderStatus.orderInfo}">
+                                    <h:column>
+                                        <div class="special_width">#{_goods.name}</div>
+                                    </h:column>
+                                    <h:column>
+                                        <div class="special_width">#{_goods.gpsLat}</div>
+                                    </h:column>
+                                    <h:column>
+                                        <div class="special_width">#{_goods.gpsLong}</div>
+                                    </h:column>
+                                    <h:column>
+                                        <div class="special_width">#{_goods.weight}</div>
+                                    </h:column>
+                                    <h:column>
+                                        <div class="special_width">#{_goods.status}</div>
+                                    </h:column>
+                                </h:dataTable>
+                            </h:column>
+                        </h:dataTable>
+                    </h:form>
+                    <h:form rendered="#{checkUser.hasApplicationRole('driver')}">
+                        <h:graphicImage value="../resources/images/Valli1.png" width="450" height="323"/>
+                    </h:form>
+                </div>
+            </div>
+        </div>
+
+    </ui:define>
+</ui:composition>

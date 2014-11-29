@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                template="/WEB-INF/templates/admin.xhtml">
+    <ui:define name="content">
+        <div class="all_box">
+            <div class="home_box">
+                <div class="align_left">
+
+                    <h:form rendered="#{checkUser.hasApplicationRole('admin')}">
+                        <h:panelGrid columns="2" columnClasses="titleCell">
+
+                            <h:outputLabel for="number" value="Number:"/>
+                            <h:inputText id="number" value="#{furaAction.fura.furaNumber}" >
+                                <f:validator validatorId="furaValidator"/>
+                            </h:inputText>
+                            <p></p>
+                            <h:message for="number" errorClass="invalid"/>
+
+                            <h:outputLabel for="count" value="Driver count"/>
+                            <h:inputText id="count" value="#{furaAction.fura.driverCount}"
+                                         validatorMessage="Not a digit!"
+                                         >
+                                <f:convertNumber integerOnly="true"/>
+                            </h:inputText>
+                            <p></p>
+                            <h:message for="count" errorClass="invalid"/>
+
+                            <h:outputLabel for="capacity" value="Order:"/>
+                            <h:selectOneMenu id="capacity" value="#{furaAction.fura.capacity}">
+                                <f:selectItem itemValue="small" itemLabel="Small (1000 kg)"/>
+                                <f:selectItem itemValue="middle" itemLabel="Middle (5000 kg)"/>
+                                <f:selectItem itemValue="large" itemLabel="Large (10000 kg)"/>
+                            </h:selectOneMenu>
+                        </h:panelGrid>
+
+                        <h:panelGrid columns="2">
+                            <h:commandButton id="but" action="#{furaAction.addFura}" value="Add" styleClass="but"
+                                             ajax="true" rendered="true"/>
+                            <h:messages styleClass="messages" errorClass="invalid" infoClass="valid" warnClass="warning"
+                                        globalOnly="true"/>
+                        </h:panelGrid>
+
+                    </h:form>
+                </div>
+            </div>
+            <div class="home_box">
+                <h:form rendered="#{checkUser.hasApplicationRole('admin')}">
+                    <h:panelGroup rendered="#{empty furas}">
+                        <em>No registered furas.</em>
+                    </h:panelGroup>
+                    <h:dataTable var="_fura" value="#{furas}" rendered="#{not empty furas}"
+                                 styleClass="simpletablestyle" headerClass="headerTable" rowClasses="rowTable"
+                                 columnClasses="columnTable, firstColumnTable, secondColumnTable, thirdColumnTable"
+                                 border="1">
+                        <h:column>
+                            <f:facet name="header">Number</f:facet>
+
+                            <div class="fura_format">#{_fura.furaNumber}</div>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Drivers amount</f:facet>
+                            #{_fura.driverCount}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Capacity</f:facet>
+                            #{_fura.capacity}
+                        </h:column>
+                    </h:dataTable>
+                </h:form>
+                <h:form rendered="#{checkUser.hasApplicationRole('driver')}">
+                    <h:graphicImage value="../resources/images/Valli1.png" width="450" height="323"/>
+                </h:form>
+            </div>
+        </div>
+    </ui:define>
+</ui:composition>

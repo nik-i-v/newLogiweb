@@ -1,0 +1,408 @@
+*
+{
+    border: 0;
+    margin: 0;
+}
+
+img
+{
+    border: 0px;
+}
+
+body{
+    font: 16px Arial, Helvetica, sans-serif, #FFFFFF;
+    color: #fcff71;
+    background: url(../../resources/images/bg.png);
+    line-height: 18px;
+}
+
+#bg { background: url(../../resources/images/bg.jpg) ;}
+
+#bg_top { background: url(../../resources/images/bg_top.png) center top no-repeat;}
+
+#bg_bot { background: url(../../resources/images/bg_bot.png) center bottom no-repeat ;}
+
+#main {
+    width: 988px;
+    margin: 0px auto;
+    color: #FFFFFF;
+}
+
+#header {
+    width:1010px;
+    height: 80px;
+}
+
+#buttons{
+    text-align:center;
+    height: 44px;
+    padding-left: 40px;
+    padding: 0px 0px 0px 550px;
+}
+
+#buttons a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #DDDDDD;
+    text-align: center;
+    padding-top: 32px;
+    height: 50px;
+
+}
+
+#logout {
+    text-align:center;
+    height: 30px;
+    padding-left: 40px;
+    padding: 0px 0px 0px 893px;
+}
+
+.but {
+    width: 140px;
+}
+
+#buttons .but:hover {
+    background: url(../../resources/images/but_hover.png) center center no-repeat;
+    color:#000000;
+}
+
+#buttons .but {
+    background: url(../../resources/images/but_hover.png) center center no-repeat;
+    color: #f0f902;
+}
+
+.but_t {background: url(../../resources/images/but_hover.png) center bottom no-repeat;}
+
+
+
+.top {
+    height:190px;
+    width: 1037px;
+    background-image: url("../../resources/images/shapka.png");
+}
+
+
+.circl_all {
+    height: 58px;
+    vertical-align:top;
+    padding: 27px 0px 0px 113px;}
+
+.circl {
+    height: 21px;
+    width: 21px;
+    margin: 0px 102px 0px 0px;
+    float: left;
+    display:block; }
+
+
+
+#content{
+    padding: 0px 0px 0px 0px;
+    color: #000000;
+}
+
+.razd_h { height: 30px;}
+
+.home_box {
+    float: left;
+    width: 288px;
+    margin: auto -20px;
+    padding: 13px 15px 13px 15px;
+    color: #FFFFFF;
+}
+
+
+#left{
+    width: 640px;
+    float: left;
+    margin-left: 0px;
+}
+
+
+#left_h{
+    width: 590px;
+    float: left;
+    margin-left: 0px;
+}
+
+.text{
+    padding: 0px 0px 15px 0px;
+}
+
+.img_l {	float:left;
+    margin: 5px 22px 3px 0px;
+}
+
+.img_r {	float: right;
+    margin: 9px 10px 3px 10px;
+}
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight: 100;
+    color: #000000;
+    text-align: left;
+    padding: 0px 0px 0px 0px;
+    line-height:normal;
+}
+
+.read {
+    font-size:12px;
+    color: #FF0000;
+    text-decoration: none;
+    display:block;
+    line-height: 17px;
+    width: 66px;
+    text-align: center;
+    float: right;
+    font-weight:bold;
+    font-style: italic;
+
+}
+
+.read:hover {
+    font-size:12px;
+    text-decoration: underline;
+}
+
+.box_more {
+    height:	111px;
+    padding: 0px 15px 0px 15px;
+
+}
+.box_more_l { float:left;
+    width: 780px;
+    padding-top: 15px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.box_more_r { float: right;
+    width: 155px;
+    padding-top: 30px;
+}
+.but_more {
+    width: 156px;
+    height: 30px;
+    padding-top: 13px;
+    background: url(../../resources/images/but_more.gif) left top no-repeat;
+    display:block;
+    font-size:18px;
+    color:#FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+#b_col1 {
+    width: 253px;
+    float: left;
+    margin-left: 43px;
+}
+#b_col2 {
+    width: 253px;
+    float: left;
+    margin-left: 85px;
+}
+#b_col3 {
+    width: 253px;
+    float: left;
+    margin-left: 85px;
+    text-align: left;
+}
+
+
+.box_us {
+    width: 244px;
+}
+
+.box_us_l {
+    width: 27px;
+    float: left;
+    padding-top:3px;}
+
+.box_us_r {
+    width: 217px;
+    float: left;}
+
+
+.spis_bot {
+    list-style:none;
+    padding: 0px 0px 0px 34px;}
+
+.spis_bot li {
+    padding: 7px 0px 0px 18px;
+}
+
+.spis_bot a {
+    color:#ffffff;
+    text-decoration:none;
+    font-weight: 100;
+    display: block;
+    font-weight:bold;}
+.spis_bot a:hover {
+    text-decoration: underline;
+}
+
+.fu_i {
+    padding: 0px 14px 0px 0px;
+    vertical-align: middle ;
+}
+
+#b_col3 ul {
+    list-style:none;
+    padding: 0px 0px 0px 52px;}
+
+#b_col3 li {
+    padding: 8px 0px 2px 0px;
+    background: none;
+}
+
+#b_col3 li a {
+    color:#FFFFFF;
+    text-decoration: none;
+    font-weight: bold;}
+
+#b_col3 li a:hover {
+    text-decoration: underline;
+}
+
+.lh {
+    line-height: 22px;
+}
+
+
+
+.sub-menu
+{
+    display: none;
+}
+.main-item:focus ~ .sub-menu,
+.main-item:active ~ .sub-menu,
+.sub-menu:hover
+{
+    display: block;
+}
+
+
+.menu-items {
+    display: none;
+    margin: 0;
+}
+
+.menu-title {
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 18px;
+}
+
+.menu-open .menu-items {
+    display: block;
+}
+
+a.but {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.simpletablestyle{
+    border-collapse:collapse;
+    border: #000000 1px solid;
+    text-align: center;
+    color: #ffffff;
+    width: 100% ;
+}
+
+.headerTable{
+    text-align:center;
+    color: #DDDDDD;
+    border-collapse:collapse;
+    background:none repeat scroll 0 0 #555555;
+    border-bottom:1px solid #000000;
+    border-left: 1px solid #000000;
+    padding:2px;
+}
+
+.rowTable{
+    border: 1px #FFFFFF solid;
+    border-collapse:collapse;
+    text-align: center;
+    width: 50px;
+}
+
+.columnTable{
+    border:1px solid #FFFFFF;
+    width: 70px;
+    padding: 3px 10px;
+}
+
+.firstColumnTable, .secondColumnTable, .thirdColumnTable, .lastColumnTable{
+    border-collapse:collapse;
+    border:1px solid #FFFFFF;
+    width: 70px;
+}
+
+.firstColumnTable1 {
+    width: 70px;
+    border-collapse:collapse;
+}
+.lastColumnTable1,  .secondColumnTable1, .thirdColumnTable1,{
+    width: 50px;
+    border-collapse:collapse;
+}
+.col1{
+    border-top: 1px solid #000000;
+    border-collapse:collapse;
+}
+
+.special_width{
+    width: 90px;
+}
+
+.special_width_head{
+    width: 90px;
+}
+
+.order_buttons{
+    margin: auto -55px;
+}
+
+.add_goods_form{
+    width: 20px;
+}
+
+.drivers_format{
+    width: 110px;
+}
+
+.order_status_format{
+    width: 75px;
+}
+
+.fura_format{
+    width: 75px;
+}
+
+.name_format{
+    width: 150px;
+}
+
+.column1{
+    width: 20px;
+}
+
+.column2{
+    width: 40px;
+}
+
+.align_left{
+    margin: 3px;
+}
+

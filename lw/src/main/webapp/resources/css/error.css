@@ -1,0 +1,23 @@
+html,
+*
+{
+    border: 0;
+    margin: 50px 50px;
+}
+
+
+body{
+    font: 18px Arial, Helvetica, sans-serif;
+    background-image: url(../../resources/images/bg.jpg) ;
+    overflow-y:hidden;
+    text-align: center;
+    line-height: 18px;
+}
+
+a.link {
+    margin-left: 85px;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+
