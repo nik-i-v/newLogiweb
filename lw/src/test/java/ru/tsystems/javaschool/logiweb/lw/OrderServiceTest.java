@@ -106,4 +106,70 @@ public class OrderServiceTest {
         drivers.add(83746535298L);
         service.addFuraAndDrivers(1, drivers, "CF35241");
     }
+
+//    @Test
+//    public void closeOrderTest_success() {
+//        String hql = "SELECT d.license FROM Drivers d WHERE  d.driverShift.orderId = :orderNumber";
+//        List<Long> drivers = new LinkedList<>();
+//        drivers.add(37456263546L);
+//        OrderServiceBean service = new OrderServiceBean();
+//        service.setEntityManager(entityManager);
+//        service.setLogger(logger);
+//        when(entityManager.createQuery(hql)).thenReturn(query);
+//        when(query.setParameter("orderNumber", 1234)).thenReturn(query);
+//        when(query.getResultList()).thenReturn(drivers);
+//
+//        hql = "UPDATE OrderStatus os SET os.status = :status " +
+//                "WHERE os.orderId = :orderId";
+//        when(entityManager.createQuery(hql)).thenReturn(query);
+//        when(query.setParameter("status", OrderStatus.Status.confirmed)).thenReturn(query);
+//        when(query.setParameter("orderId", 1243)).thenReturn(query);
+//
+//        hql = "SELECT d.driversId FROM Drivers d WHERE d.license = :license";
+//        when(entityManager.createQuery(hql)).thenReturn(query);
+//        when(query.setParameter("license", 37456263546L)).thenReturn(query);
+//        when(query.getSingleResult()).thenReturn(new Object());
+//        when(query.getSingleResult().toString()).thenReturn("1");
+//
+//        when(entityManager.find(DriverShift.class, 1)).thenReturn(new DriverShift());
+//
+//        hql = "SELECT o.furaId FROM Order o WHERE o.id = :number";
+//        when(entityManager.createQuery(hql)).thenReturn(query);
+//        when(query.setParameter("number", 1234)).thenReturn(query);
+//        when(query.getSingleResult()).thenReturn(new Object());
+//        when(query.getSingleResult().toString()).thenReturn("123");
+//        hql = "UPDATE Fura f SET f.status = :status WHERE f.furasId = :id";
+//        when(entityManager.createQuery(hql)).thenReturn(query);
+//        when(query.setParameter("id", 1234)).thenReturn(query);
+//        when(query.setParameter("status", Fura.Status.no)).thenReturn(query);
+//        hql = "UPDATE Order o SET o.furaId = :nulls WHERE o.id = :Ids";
+//        when(entityManager.createQuery(hql)).thenReturn(query);
+//        when(query.setParameter("nulls", null)).thenReturn(query);
+//        when(query.setParameter("Ids", 1)).thenReturn(query);
+//        service.closeOrder(1);
+//    }
+
+    @Test
+    public void getOrdersInStatus(){
+        String hql = "SELECT o.id FROM Order o WHERE o.orderStatus.status = :status";
+        OrderServiceBean service = new OrderServiceBean();
+        service.setEntityManager(entityManager);
+        service.setLogger(logger);
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("status", OrderStatus.Status.made)).thenReturn(query);
+        service.getMadeOrders();
+    }
+
+    @Test
+    public void getCreatedOrdersWitsGoodsTest(){
+        String hql = "SELECT  DISTINCT oi.orderNumber FROM OrderInfo oi WHERE oi.orderStatus.status = :status";
+        OrderServiceBean service = new OrderServiceBean();
+        service.setEntityManager(entityManager);
+        service.setLogger(logger);
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("status", OrderStatus.Status.created)).thenReturn(query);
+        service.getCreatedOrdersWitsGoods();
+    }
+
+
 }

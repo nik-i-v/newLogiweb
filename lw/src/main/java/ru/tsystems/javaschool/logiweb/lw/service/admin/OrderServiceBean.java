@@ -117,7 +117,6 @@ public class OrderServiceBean implements OrderService {
     @Override
     public void addFuraAndDrivers(Integer orderNumber, List<Long> driverId, String furaNumber) throws IncorrectDataException {
         logger.info("Add fura and drivers to order " + orderNumber);
-//        checkOrderStatus(getOrderStatus(orderNumber), OrderStatus.Status.confirmed.toString());
         isFuraSuitable(furaIntCapacity(getFuraCapacity(furaNumber)), weightGoodsInOrder(orderNumber));
         isDriverCountSuitable(getDriverCount(furaNumber), driverId.size());
         changeFuraStatus(furaNumber);
@@ -142,22 +141,7 @@ public class OrderServiceBean implements OrderService {
         logger.info("Order number " + orderNumber + " was closed");
     }
 
-    /**
-     * Set a fura status. Status value can be "yes" or "no".
-     * @param orderNumber the number of an order
-     * @param status
-     */
-    private void changeFuraStatus(Integer orderNumber, Fura.Status status) {
-        logger.info("Change status of the fura in order " + orderNumber + " to " + status);
-        Query query = entityManager.createQuery("SELECT o.furaId FROM Order o WHERE o.id = :number");
-        query.setParameter("number", orderNumber);
-        Integer furaId = Integer.parseInt(query.getSingleResult().toString());
-        Query changeStatus = entityManager.createQuery("UPDATE Fura f SET f.status = :status WHERE f.furasId = :id");
-        changeStatus.setParameter("id", furaId);
-        changeStatus.setParameter("status", status);
-        changeStatus.executeUpdate();
-        logger.info("Fura's status was changed");
-    }
+
 
     /**
      * Returns all orders with "created" status.
@@ -198,21 +182,7 @@ public class OrderServiceBean implements OrderService {
         return query.getResultList();
     }
 
-    /**
-     * Checks is there any goods in certain order.
-     * @param orderNumber the number of an order
-     * @throws IncorrectDataException if there isn't goods in an order
-     */
-    @Override
-    public void checkIfGoodsAreNotEmpty(Integer orderNumber) throws IncorrectDataException {
-        Query query = entityManager.createQuery("SELECT COUNT (oi.name) FROM OrderInfo oi WHERE oi.orderNumber = :number");
-        query.setParameter("number", orderNumber);
-        if (query.getSingleResult().equals(null) || Integer.parseInt(query.getSingleResult().toString()) == 0) {
-            throw new IncorrectDataException("Please add goods to order");
-        }
-    }
-
-    /**
+     /**
      * Returns an order status.
      * @param orderNumber the number of an order
      * @return the value of status
@@ -390,6 +360,23 @@ public class OrderServiceBean implements OrderService {
         Query query = entityManager.createQuery("SELECT d.driversId FROM Drivers d WHERE d.license = :license");
         query.setParameter("license", license);
         return Integer.parseInt(query.getSingleResult().toString());
+    }
+
+    /**
+     * Set a fura status. Status value can be "yes" or "no".
+     * @param orderNumber the number of an order
+     * @param status
+     */
+    private void changeFuraStatus(Integer orderNumber, Fura.Status status) {
+        logger.info("Change status of the fura in order " + orderNumber + " to " + status);
+        Query query = entityManager.createQuery("SELECT o.furaId FROM Order o WHERE o.id = :number");
+        query.setParameter("number", orderNumber);
+        Integer furaId = Integer.parseInt(query.getSingleResult().toString());
+        Query changeStatus = entityManager.createQuery("UPDATE Fura f SET f.status = :status WHERE f.furasId = :id");
+        changeStatus.setParameter("id", furaId);
+        changeStatus.setParameter("status", status);
+        changeStatus.executeUpdate();
+        logger.info("Fura's status was changed");
     }
 
     /**

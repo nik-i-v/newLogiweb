@@ -5,191 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0f6094c-fbe3-4767-a134-9ec88cf856cd" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\logiweb\.idea\artifacts\server_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\.idea\artifacts\server_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\.idea\artifacts\service_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\.idea\artifacts\service_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\.idea\artifacts\ui_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\.idea\artifacts\ui_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\.idea\dataSources.ids" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\.idea\dataSources.local.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\.idea\dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\.idea\uiDesigner.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\src\main\java\ru\tsystems\javaschool\logiweb\lw\ui\annotations\Admin.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\src\main\java\ru\tsystems\javaschool\logiweb\lw\ui\annotations\Driver.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\src\main\webapp\WEB-INF\templates\header.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\src\main\webapp\driver\change_status.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\src\main\webapp\errorLogin.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\WEB-INF\beans.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\log4j.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\server\dao\DriverDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\server\dao\OrderDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\server\entities\DriverShift$Status.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\service\DriverService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\service\DriverServiceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\service\FuraService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\service\FuraSeviceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\service\OrderService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\service\OrderServiceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\service\UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\service\UserServiceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\service\admin\OrderServiceForDrivers.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\service\admin\OrderServiceForDriversBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\service\driver\DriverServiceForDrivers.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\service\driver\DriverServiceForDriversBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\ActionForDrivers.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\AdminAllowed.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\CheckAdminAction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\CustomAuthorizer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\Dispatcher.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\DriverAction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\DriverAllowed.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\FuraAction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\FuraValidator.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\LoginFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\ModifyOrderAction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\NameValidator.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\OrderAction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\annotations\Admin.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\classes\ru\tsystems\javaschool\logiweb\lw\ui\annotations\Driver.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\WEB-INF\beans.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\log4j.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\server\dao\DriverDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\server\dao\OrderDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\server\entities\DriverShift$Status.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\service\DriverService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\service\DriverServiceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\service\FuraService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\service\FuraSeviceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\service\OrderService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\service\OrderServiceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\service\UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\service\UserServiceBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\service\admin\OrderServiceForDrivers.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\service\admin\OrderServiceForDriversBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\service\driver\DriverServiceForDrivers.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\service\driver\DriverServiceForDriversBean.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\ActionForDrivers.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\AdminAllowed.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\CheckAdminAction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\CustomAuthorizer.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\Dispatcher.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\DriverAction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\DriverAllowed.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\FuraAction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\FuraValidator.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\LoginFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\ModifyOrderAction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\NameValidator.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\OrderAction.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\annotations\Admin.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\classes\ru\tsystems\javaschool\logiweb\lw\ui\annotations\Driver.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\css\screen.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\images\shapka.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\lib\deltaspike-core-api-0.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\lib\deltaspike-core-api-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\lib\deltaspike-security-module-api-0.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\lib\log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\templates\header.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\add_drivers_and_fura.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\add_goods.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\admin.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\close.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\driver\change_status.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\drivers.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\errorLogin.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\errorLogin.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\index.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\login.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\orders.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\resources\js\menu.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\style.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\successLogin.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\successLoginAdmin.jsp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\templates\header.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\templates\main.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\ui\style.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\wagons.xhtml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/CheckUser.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/CheckUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/CheckUser.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/CheckUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/DriverAction.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/DriverAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/DriverAction.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/DriverAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/DriverServiceBean.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/DriverServiceBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/DriverServiceBean.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/DriverServiceBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/DriverShift.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/DriverShift.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/DriverShift.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/DriverShift.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Drivers.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Drivers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Drivers.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Drivers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Fura$Capacity.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Fura$Capacity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Fura$Capacity.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Fura$Capacity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Fura$Status.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Fura$Status.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Fura$Status.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Fura$Status.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Fura.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Fura.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Fura.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Fura.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/FuraAction.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/FuraAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/FuraAction.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/FuraAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/LoginController.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/LoginController.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/ModifyOrderAction.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/ModifyOrderAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/ModifyOrderAction.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/ModifyOrderAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Order.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Order.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Order.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/Order.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/OrderAction.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/OrderAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/OrderAction.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/admin/OrderAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderInfo$Status.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderInfo$Status.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderInfo$Status.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderInfo$Status.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderInfo.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderInfo.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderServiceBean.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderServiceBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderServiceBean.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderServiceBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/service/driver/OrderServiceForDriversBean.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/service/driver/OrderServiceForDriversBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/service/driver/OrderServiceForDriversBean.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/service/driver/OrderServiceForDriversBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderStatus$Status.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderStatus$Status.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderStatus$Status.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderStatus$Status.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderStatus.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderStatus.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/server/entities/OrderStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/SecurityInitializer.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/ui/SecurityInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/SecurityInitializer.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/ui/SecurityInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/UserService.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/UserService.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/UserServiceBean.class" afterPath="$PROJECT_DIR$/lw/target/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/UserServiceBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/UserServiceBean.class" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/classes/ru/tsystems/javaschool/logiweb/lw/service/admin/UserServiceBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw.war" afterPath="$PROJECT_DIR$/lw/target/lw.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/admin/ModifyOrderAction.java" afterPath="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/admin/ModifyOrderAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderService.java" afterPath="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderServiceBean.java" afterPath="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderServiceBean.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/test/java/ru/tsystems/javaschool/logiweb/lw/OrderServiceTest.java" afterPath="$PROJECT_DIR$/lw/src/test/java/ru/tsystems/javaschool/logiweb/lw/OrderServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.java" afterPath="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/webapp/admin/add_drivers_and_fura.xhtml" afterPath="$PROJECT_DIR$/lw/src/main/webapp/admin/add_drivers_and_fura.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/admin/add_drivers_and_fura.xhtml" afterPath="$PROJECT_DIR$/lw/target/lw/admin/add_drivers_and_fura.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/webapp/admin/add_goods.xhtml" afterPath="$PROJECT_DIR$/lw/src/main/webapp/admin/add_goods.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/admin/add_goods.xhtml" afterPath="$PROJECT_DIR$/lw/target/lw/admin/add_goods.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/templates/admin.xhtml" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/templates/admin.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/driver/change_goods_status.xhtml" afterPath="$PROJECT_DIR$/lw/target/lw/driver/change_goods_status.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/admin/close.xhtml" afterPath="$PROJECT_DIR$/lw/target/lw/admin/close.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/admin/confirm.xhtml" afterPath="$PROJECT_DIR$/lw/target/lw/admin/confirm.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/templates/driver.xhtml" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/templates/driver.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/webapp/admin/drivers.xhtml" afterPath="$PROJECT_DIR$/lw/src/main/webapp/admin/drivers.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/admin/drivers.xhtml" afterPath="$PROJECT_DIR$/lw/target/lw/admin/drivers.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/resources/css/error.css" afterPath="$PROJECT_DIR$/lw/target/lw/resources/css/error.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/login.xhtml" afterPath="$PROJECT_DIR$/lw/target/lw/login.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/lw_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/lw_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/resources/css/main.css" afterPath="$PROJECT_DIR$/lw/target/lw/resources/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/webapp/admin/orders.xhtml" afterPath="$PROJECT_DIR$/lw/src/main/webapp/admin/orders.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/admin/orders.xhtml" afterPath="$PROJECT_DIR$/lw/target/lw/admin/orders.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/driver/orders.xhtml" afterPath="$PROJECT_DIR$/lw/target/lw/driver/orders.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/pom.xml" afterPath="$PROJECT_DIR$/lw/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/resources/css/screen.css" afterPath="$PROJECT_DIR$/lw/target/lw/resources/css/screen.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/webapp/admin/wagons.xhtml" afterPath="$PROJECT_DIR$/lw/src/main/webapp/admin/wagons.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/admin/wagons.xhtml" afterPath="$PROJECT_DIR$/lw/target/lw/admin/wagons.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/lw/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/target/lw/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/lw/target/lw/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/webapp/driver/change_goods_status.xhtml" afterPath="$PROJECT_DIR$/lw/src/main/webapp/driver/change_goods_status.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/webapp/driver/orders.xhtml" afterPath="$PROJECT_DIR$/lw/src/main/webapp/driver/orders.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="logiweb.iws" />
@@ -217,41 +38,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OrderServiceTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderServiceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lw/src/test/java/ru/tsystems/javaschool/logiweb/lw/OrderServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.4366198" vertical-offset="716" max-vertical-offset="1734">
-              <caret line="106" column="57" selection-start-line="106" selection-start-column="57" selection-end-line="106" selection-end-column="57" />
-              <folding />
+            <state vertical-scroll-proportion="-8.571428" vertical-offset="2735" max-vertical-offset="3077">
+              <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lw/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2692" max-vertical-offset="3689">
-              <caret line="164" column="46" selection-start-line="164" selection-start-column="46" selection-end-line="164" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderServiceBean.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OrderServiceBean.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderServiceBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1577" max-vertical-offset="6749">
-              <caret line="108" column="7" selection-start-line="108" selection-start-column="7" selection-end-line="108" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.34795323" vertical-offset="2720" max-vertical-offset="6528">
+              <caret line="184" column="1" selection-start-line="184" selection-start-column="1" selection-end-line="184" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FuraSeviceBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/admin/FuraSeviceBean.java">
+      <file leaf-file-name="ModifyOrderAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/admin/ModifyOrderAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="502" max-vertical-offset="1394">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="863" max-vertical-offset="2618">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="change_goods_status.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lw/src/main/webapp/driver/change_goods_status.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.153846" vertical-offset="663" max-vertical-offset="2074">
+              <caret line="53" column="86" selection-start-line="53" selection-start-column="86" selection-end-line="53" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orders.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lw/src/main/webapp/driver/orders.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="510" max-vertical-offset="1819">
+              <caret line="39" column="86" selection-start-line="39" selection-start-column="86" selection-end-line="39" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orders.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lw/src/main/webapp/admin/orders.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="4.9615383" vertical-offset="996" max-vertical-offset="2227">
+              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -268,9 +111,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lw/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderServiceBean.java" />
         <option value="$PROJECT_DIR$/lw/pom.xml" />
+        <option value="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderService.java" />
         <option value="$PROJECT_DIR$/lw/src/test/java/ru/tsystems/javaschool/logiweb/lw/OrderServiceTest.java" />
+        <option value="$PROJECT_DIR$/lw/src/main/webapp/driver/orders.xhtml" />
+        <option value="$PROJECT_DIR$/lw/src/main/webapp/driver/change_goods_status.xhtml" />
+        <option value="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/admin/ModifyOrderAction.java" />
+        <option value="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderServiceBean.java" />
       </list>
     </option>
   </component>
@@ -462,6 +309,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="driver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logiweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logiweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logiweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logiweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -572,6 +479,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logiweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logiweb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -637,7 +582,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.OrderServiceTest">
+  <component name="RunManager" selected="JBoss Server.logiweb">
     <configuration default="false" name="OrderTestAq" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1043,7 +988,7 @@
       <created>1417251336152</created>
       <option name="number" value="Default" />
       <updated>1417251336152</updated>
-      <workItem from="1417251337847" duration="10775000" />
+      <workItem from="1417251337847" duration="18729000" />
     </task>
     <task id="LOCAL-00001" summary="2 tests order">
       <created>1417264221787</created>
@@ -1067,42 +1012,42 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10775000" />
+    <option name="totallyTimeSpent" value="18729000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1245,18 +1190,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderServiceBean.java">
+    <entry file="file://$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1577" max-vertical-offset="6749">
-          <caret line="108" column="7" selection-start-line="108" selection-start-column="7" selection-end-line="108" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.7545692" vertical-offset="153" max-vertical-offset="595">
+          <caret line="33" column="86" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw/src/main/webapp/driver/orders.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="510" max-vertical-offset="1819">
+          <caret line="39" column="86" selection-start-line="39" selection-start-column="86" selection-end-line="39" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw/src/main/webapp/driver/change_goods_status.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="663" max-vertical-offset="2074">
+          <caret line="53" column="86" selection-start-line="53" selection-start-column="86" selection-end-line="53" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw/src/main/webapp/admin/orders.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.9615383" vertical-offset="996" max-vertical-offset="2227">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lw/src/test/java/ru/tsystems/javaschool/logiweb/lw/OrderServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4366198" vertical-offset="716" max-vertical-offset="1734">
-          <caret line="106" column="57" selection-start-line="106" selection-start-column="57" selection-end-line="106" selection-end-column="57" />
+        <state vertical-scroll-proportion="-8.571428" vertical-offset="2735" max-vertical-offset="3077">
+          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/admin/ModifyOrderAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="863" max-vertical-offset="2618">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/admin/OrderServiceBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34795323" vertical-offset="2720" max-vertical-offset="6528">
+          <caret line="184" column="1" selection-start-line="184" selection-start-column="1" selection-end-line="184" selection-end-column="1" />
           <folding />
         </state>
       </provider>
