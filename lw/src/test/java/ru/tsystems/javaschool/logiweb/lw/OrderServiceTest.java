@@ -107,6 +107,53 @@ public class OrderServiceTest {
         service.addFuraAndDrivers(1, drivers, "CF35241");
     }
 
+    @Test(expected = IncorrectDataException.class)
+    public void addFuraAndDriversToOrderTest_fura_is_not_suitable() throws IncorrectDataException {
+        String hql = "SELECT f.capacity FROM  Fura f WHERE f.furaNumber = :number";
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("number", "CF35241")).thenReturn(query);
+        when(query.getSingleResult()).thenReturn(new Object());
+        when(query.getSingleResult().toString()).thenReturn("small");
+        hql = "SELECT SUM(oi.weight) FROM OrderInfo oi WHERE oi.orderNumber = :number";
+        OrderServiceBean service = new OrderServiceBean();
+        service.setEntityManager(entityManager);
+        service.setLogger(logger);
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("number", 1)).thenReturn(query);
+        when(query.getSingleResult()).thenReturn(new Object());
+        when(query.getSingleResult().toString()).thenReturn("12398755");
+        List<Long> drivers = new LinkedList<>();
+        drivers.add(83746535298L);
+        service.addFuraAndDrivers(1, drivers, "CF35241");
+
+    }
+
+    @Test(expected = IncorrectDataException.class)
+    public void addFuraAndDriversToOrderTest_drivers_are_not_suitable() throws IncorrectDataException {
+        String hql = "SELECT f.capacity FROM  Fura f WHERE f.furaNumber = :number";
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("number", "CF35241")).thenReturn(query);
+        when(query.getSingleResult()).thenReturn(new Object());
+        when(query.getSingleResult().toString()).thenReturn("small");
+        hql = "SELECT SUM(oi.weight) FROM OrderInfo oi WHERE oi.orderNumber = :number";
+        OrderServiceBean service = new OrderServiceBean();
+        service.setEntityManager(entityManager);
+        service.setLogger(logger);
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("number", 1)).thenReturn(query);
+        when(query.getSingleResult()).thenReturn(new Object());
+        when(query.getSingleResult().toString()).thenReturn("12398755");
+        hql = "SELECT f.driverCount FROM Fura f WHERE f.furaNumber = :number";
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("number", "CF35241")).thenReturn(query);
+        when(query.getSingleResult()).thenReturn(new Object());
+        when(query.getSingleResult().toString()).thenReturn("2");
+        List<Long> drivers = new LinkedList<>();
+        drivers.add(83746535298L);
+        service.addFuraAndDrivers(1, drivers, "CF35241");
+    }
+
+    
 //    @Test
 //    public void closeOrderTest_success() {
 //        String hql = "SELECT d.license FROM Drivers d WHERE  d.driverShift.orderId = :orderNumber";
@@ -150,7 +197,7 @@ public class OrderServiceTest {
 //    }
 
     @Test
-    public void getOrdersInStatus(){
+    public void getOrdersInStatus() {
         String hql = "SELECT o.id FROM Order o WHERE o.orderStatus.status = :status";
         OrderServiceBean service = new OrderServiceBean();
         service.setEntityManager(entityManager);
@@ -161,7 +208,7 @@ public class OrderServiceTest {
     }
 
     @Test
-    public void getCreatedOrdersWitsGoodsTest(){
+    public void getCreatedOrdersWitsGoodsTest() {
         String hql = "SELECT  DISTINCT oi.orderNumber FROM OrderInfo oi WHERE oi.orderStatus.status = :status";
         OrderServiceBean service = new OrderServiceBean();
         service.setEntityManager(entityManager);

@@ -141,8 +141,6 @@ public class OrderServiceBean implements OrderService {
         logger.info("Order number " + orderNumber + " was closed");
     }
 
-
-
     /**
      * Returns all orders with "created" status.
      * @return the list of order numbers
