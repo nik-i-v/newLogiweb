@@ -153,7 +153,7 @@ public class OrderServiceTest {
         service.addFuraAndDrivers(1, drivers, "CF35241");
     }
 
-    
+
 //    @Test
 //    public void closeOrderTest_success() {
 //        String hql = "SELECT d.license FROM Drivers d WHERE  d.driverShift.orderId = :orderNumber";

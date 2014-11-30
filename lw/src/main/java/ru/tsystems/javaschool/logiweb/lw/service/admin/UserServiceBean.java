@@ -22,7 +22,14 @@ public class UserServiceBean implements UserService {
      */
     @Override
     public List<Users> getUsers() {
-        logger.info("Get users");
         return entityManager.createQuery("SELECT u FROM Users u").getResultList();
+    }
+
+    /**
+     * Sets an EntityManager.
+     * @param entityManager
+     */
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
     }
 }
