@@ -51,11 +51,11 @@
                             #{_order.id}
                         </h:column>
                         <h:column>
-                            <f:facet name="header">Fura</f:facet>
+                            <f:facet name="header"><div class="fura_format">Fura</div></f:facet>
                             #{_order.fura.furaNumber}
                         </h:column>
                         <h:column>
-                            <f:facet name="header">Drivers</f:facet>
+                            <f:facet name="header"><div class="drivers_format">Drivers</div></f:facet>
                             <h:dataTable var="_drivers" value="#{_order.driverShift}" styleClass="nestedTable">
                                 <h:column>
                                     #{_drivers.drivers.license}

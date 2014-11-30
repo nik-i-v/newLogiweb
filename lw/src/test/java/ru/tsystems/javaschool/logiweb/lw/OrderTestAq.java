@@ -11,7 +11,6 @@ import org.junit.runner.RunWith;
 import ru.tsystems.javaschool.logiweb.lw.server.entities.Order;
 import ru.tsystems.javaschool.logiweb.lw.service.admin.OrderService;
 import ru.tsystems.javaschool.logiweb.lw.service.admin.OrderServiceBean;
-import ru.tsystems.javaschool.logiweb.lw.ui.admin.ModifyOrderAction;
 import ru.tsystems.javaschool.logiweb.lw.ui.admin.OrderAction;
 import ru.tsystems.javaschool.logiweb.lw.util.IncorrectDataException;
 
@@ -23,17 +22,16 @@ public class OrderTestAq {
     @EJB
     private OrderService orderService;
 
-    @Deployment
-    public static JavaArchive createTestArchive() {
-        return ShrinkWrap.create(JavaArchive.class, "lw.war")
-                .addClasses(Order.class,
-                        OrderServiceBean.class,
-                        IncorrectDataException.class,
-                        OrderAction.class,
-                        ModifyOrderAction.class)
-                .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
-
-    }
+//    @Deployment
+//    public static JavaArchive createTestArchive() {
+//        return ShrinkWrap.create(JavaArchive.class, "lw.war")
+//                .addClasses(Order.class,
+//                        OrderServiceBean.class,
+//                        IncorrectDataException.class,
+//                        OrderAction.class)
+//                .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
+//
+//    }
 
     @Test
     public void testGetOrders() {
