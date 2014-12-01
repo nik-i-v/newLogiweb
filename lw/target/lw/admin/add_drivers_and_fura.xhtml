@@ -14,34 +14,41 @@
                             <em>No created orders.</em>
                         </h:panelGroup>
                         <h:form id="orderActivity" rendered="#{not empty createdOrderNumber}">
-                            <h:panelGrid columns="3" id="addDrivers" rendered="#{not empty confirmedOrderNumber}">
-                                <h:outputLabel for="orderNumber" value="Order:"/>
-                                <h:selectOneMenu id="orderNumber" value="#{modifyOrder.orderNumber}">
-                                    <f:selectItems value="#{modifyOrder.confirmedOrderNumber}"/>
-                                </h:selectOneMenu>
-                                <h:message for="orderNumber" errorClass="invalid"/>
+                            <!--<h:panelGrid columns="3" id="addDrivers" rendered="#{not empty confirmedOrderNumber}">-->
+                            <table>
+                                <tr>
+                                    <td><h:outputLabel for="orderNumber" value="Order:"/></td>
+                                    <td><h:selectOneMenu id="orderNumber" value="#{modifyOrder.orderNumber}">
+                                        <f:selectItems value="#{modifyOrder.confirmedOrderNumber}"/>
+                                    </h:selectOneMenu></td>
+                                </tr>
+                                <tr>
+                                    <td><h:outputLabel for="driverLicense" value="Drivers"/></td>
+                                    <td><h:selectManyCheckbox id="driverLicense" value="#{modifyOrder.driversToOrder}"
+                                                              layout="pageDirection" converter="javax.faces.Long">
+                                        <f:selectItems value="#{driverAction.freeDrivers}"/>
+                                    </h:selectManyCheckbox></td>
+                                </tr>
+                                <tr>
+                                    <td><h:outputLabel for="furaNumber" value="Wagon:"/></td>
+                                    <td><h:selectOneMenu id="furaNumber" value="#{modifyOrder.furaToOrder}">
+                                        <f:selectItems value="#{furaAction.freeFuras}"/>
+                                    </h:selectOneMenu></td>
+                                </tr>
 
-                                <h:outputLabel for="driverLicense" value="Drivers"/>
-                                <h:selectManyCheckbox id="driverLicense" value="#{modifyOrder.driversToOrder}"
-                                                      layout="pageDirection" converter="javax.faces.Long">
-                                    <f:selectItems value="#{driverAction.freeDrivers}"/>
-                                </h:selectManyCheckbox>
-                                <h:message for="driverLicense" errorClass="invalid"/>
+                                <tr>
+                                    <td><h:commandButton id="add" value="Add" styleClass="but"
+                                                         action="#{modifyOrder.addFuraAndDriversToOrder}" ajax="true"
+                                                         rendered="true"/></td>
 
-                                <h:outputLabel for="furaNumber" value="Wagon:"/>
-                                <h:selectOneMenu id="furaNumber" value="#{modifyOrder.furaToOrder}">
-                                    <f:selectItems value="#{furaAction.freeFuras}"/>
-                                </h:selectOneMenu>
-                                <h:message for="furaNumber" errorClass="invalid"/>
-
-                                <h:commandButton id="add" value="Add" styleClass="but"
-                                                 action="#{modifyOrder.addFuraAndDriversToOrder}" ajax="true"
-                                                 rendered="true"/>
-                                <h:messages styleClass="messages" errorClass="invalid" infoClass="valid"
-                                            warnClass="warning"
-                                            globalOnly="true"/>
-                            </h:panelGrid>
+                                    <td><h:messages styleClass="messages" errorClass="invalid" infoClass="valid"
+                                                    warnClass="warning"
+                                                    globalOnly="true"/></td>
+                                </tr>
+                            </table>
+                            <!--</h:panelGrid>-->
                         </h:form>
+
                         <div id="buttons_back">
                             <a href="/lw/admin/orders.jsf" class="but" title="">Back</a>
                         </div>

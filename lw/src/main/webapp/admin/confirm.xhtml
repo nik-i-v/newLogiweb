@@ -15,22 +15,28 @@
                         </h:panelGroup>
                         <h:form id="orderActivity" rendered="#{not empty createdOrdersWitsGoods}">
 
-                            <h:panelGrid columns="3" id="closeOrder">
-
-                                <h:outputLabel for="orderNumber" value="Order:"/>
-                                <h:selectOneMenu id="orderNumber" value="#{modifyOrder.orderNumber}">
-                                    <f:selectItems value="#{modifyOrder.createdOrdersWitsGoods}"/>
-                                </h:selectOneMenu>
-                                <h:message for="orderNumber" errorClass="invalid"/>
-
-                                <h:commandButton id="confirmOrder" value="Confirm order" styleClass="but"
-                                                 action="#{modifyOrder.doConfirmed}" ajax="true" rendered="true"/>
-                                <h:messages styleClass="messages" errorClass="invalid" infoClass="valid"
-                                            warnClass="warning"
-                                            globalOnly="true"/>
-
-                            </h:panelGrid>
+                            <!--<h:panelGrid columns="3" id="closeOrder">-->
+                            <table>
+                                <tr><h:outputLabel for="orderNumber" value="Order:"/>
+                                    <td><h:selectOneMenu id="orderNumber" value="#{modifyOrder.orderNumber}">
+                                        <f:selectItems value="#{modifyOrder.createdOrdersWitsGoods}"/>
+                                    </h:selectOneMenu></td>
+                                    <td><h:message for="orderNumber" errorClass="invalid"/></td>
+                                </tr>
+                                <tr>
+                                    <td><h:commandButton id="confirmOrder" value="Confirm order" styleClass="but"
+                                                         action="#{modifyOrder.doConfirmed}" ajax="true"
+                                                         rendered="true"/></td>
+                                </tr>
+                                <tr>
+                                    <td><h:messages styleClass="messages" errorClass="invalid" infoClass="valid"
+                                                    warnClass="warning"
+                                                    globalOnly="true"/></td>
+                                </tr>
+                            </table>
+                            <!--</h:panelGrid>-->
                         </h:form>
+
                         <div id="buttons_back">
                             <a href="/lw/admin/orders.jsf" class="but" title="">Back</a>
                         </div>

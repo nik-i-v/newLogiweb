@@ -66,11 +66,19 @@ public class ActionForDrivers implements Serializable {
      * Changes the status of a driver.
      */
     public void changeStatus() {
-        if (currentStatus.equals(DriverStatus.atWeel.toString())) {
-            changeStatus(DriverStatus.shift);
-        } else {
-            orderServiceForDrivers.isAnybodyAtWheel(driverLicense);
-            changeStatus(DriverStatus.atWeel);
+        try {
+            if (currentStatus.equals(DriverStatus.atWeel.toString())) {
+                changeStatus(DriverStatus.shift);
+            } else {
+                orderServiceForDrivers.isAnybodyAtWheel(driverLicense);
+                changeStatus(DriverStatus.atWeel);
+            }
+            facesContext.addMessage(null,
+                    new FacesMessage(FacesMessage.SEVERITY_INFO, "Driver's status has been changed", "Driver's status has been changed"));
+        } catch (Exception e) {
+            String errorMessage = e.getMessage();
+            facesContext.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR,
+                    "Another driver is already 'atWeel'", "Changing unsuccessful"));
         }
     }
 
@@ -90,7 +98,6 @@ public class ActionForDrivers implements Serializable {
                     errorMessage, "Changing unsuccessful"));
         }
     }
-
 
 
     @Named
@@ -156,6 +163,7 @@ public class ActionForDrivers implements Serializable {
 
     /**
      * Changes driver status to a new status.
+     *
      * @param status a new status for driver
      */
     private void changeStatus(DriverStatus status) {

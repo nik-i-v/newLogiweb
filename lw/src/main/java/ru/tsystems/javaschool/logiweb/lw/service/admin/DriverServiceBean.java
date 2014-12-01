@@ -74,7 +74,9 @@ public class DriverServiceBean implements DriverService {
     @Override
     public void addDriver(String surname, String name, String patronymic, Long licenseId) throws IncorrectDataException {
         logger.info("Add new driver with license: " + licenseId);
+
         checkIfDriverIdIsUnique(licenseId);
+
         Drivers driver = new Drivers();
         DriverShift driverShift = new DriverShift();
         Users user = new Users();

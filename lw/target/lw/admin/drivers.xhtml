@@ -37,14 +37,9 @@
 
 
                             <h:outputLabel for="licence" value="Licence:"/>
-                            <h:inputText id="licence" value="#{driverAction.driver.license}"
-                                         validatorMessage="(length = 11)"
-                                         requiredMessage="(length = 11)"
-                                         converterMessage="(length = 11)"
-                                         required="true"
-                                    >
-                                <f:validateLongRange minimum="11" maximum="11"/>
-                                <f:convertNumber integerOnly="true"/>
+                            <h:inputText id="licence" value="#{driverAction.driver.license}">
+                                >
+                                <f:validator validatorId="licenseValidator"/>
                             </h:inputText>
 
                             <p></p>

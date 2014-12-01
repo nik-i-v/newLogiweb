@@ -9,7 +9,7 @@
         <div class="all_box">
             <div class="home_box">
                 <div class="align_left">
-<p>Please add goods to order.</p>
+                    <p>Please add goods to order.</p>
                     <h:form rendered="#{checkUser.hasApplicationRole('admin')}">
                         <h:panelGroup rendered="#{empty createdOrderNumber}">
                             <em>No created orders.</em>
@@ -33,7 +33,10 @@
                                         <f:validator validatorId="nameValidator"/>
                                     </h:inputText></td>
                                 </tr>
-                                <tr><td></td><td><h:message for="name" errorClass="invalid"/></td></tr>
+                                <tr>
+                                    <td></td>
+                                    <td><h:message for="name" errorClass="invalid"/></td>
+                                </tr>
                                 <tr>
                                     <td><h:outputLabel for="gpsLat" value="Latitude:"/></td>
                                     <td><h:inputText id="gpsLat" value="#{modifyOrder.orderInfo.gpsLat}"
@@ -45,7 +48,10 @@
                                         <f:convertNumber integerOnly="true" maxFractionDigits="2" maxIntegerDigits="3"/>
                                     </h:inputText></td>
                                 </tr>
-                                <tr><td></td><td><h:message for="gpsLat" errorClass="invalid"/></td></tr>
+                                <tr>
+                                    <td></td>
+                                    <td><h:message for="gpsLat" errorClass="invalid"/></td>
+                                </tr>
                                 <tr>
                                     <td><h:outputLabel for="gpsLong" value="Longitude:"/></td>
                                     <td><h:inputText id="gpsLong" value="#{modifyOrder.orderInfo.gpsLong}"
@@ -57,7 +63,10 @@
                                         <f:convertNumber integerOnly="true" maxFractionDigits="2" maxIntegerDigits="3"/>
                                     </h:inputText></td>
                                 </tr>
-                                <tr><td></td><td><h:message for="gpsLong" errorClass="invalid"/></td></tr>
+                                <tr>
+                                    <td></td>
+                                    <td><h:message for="gpsLong" errorClass="invalid"/></td>
+                                </tr>
                                 <tr>
                                     <td><h:outputLabel for="weight" value="Weight:"/></td>
                                     <td><h:inputText id="weight" value="#{modifyOrder.orderInfo.weight}"
@@ -69,7 +78,10 @@
                                         <f:convertNumber integerOnly="true" maxFractionDigits="2" maxIntegerDigits="5"/>
                                     </h:inputText></td>
                                 </tr>
-                                <tr><td></td><td><h:message for="weight" errorClass="invalid"/></td></tr>
+                                <tr>
+                                    <td></td>
+                                    <td><h:message for="weight" errorClass="invalid"/></td>
+                                </tr>
                             </table>
                             <h:commandButton id="addG" value="Add goods" styleClass="but"
                                              action="#{modifyOrder.addGoods}"
@@ -78,6 +90,7 @@
                                         globalOnly="true"/>
 
                         </h:form>
+
                         <div id="buttons_back">
                             <a href="/lw/admin/orders.jsf" class="but" title="">Back</a>
                         </div>

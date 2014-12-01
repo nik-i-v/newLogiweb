@@ -14,18 +14,20 @@
                         <h:panelGrid columns="2" columnClasses="titleCell">
 
                             <h:outputLabel for="number" value="Number:"/>
-                            <h:inputText id="number" value="#{furaAction.fura.furaNumber}" >
+                            <h:inputText id="number" value="#{furaAction.fura.furaNumber}">
                                 <f:validator validatorId="furaValidator"/>
                             </h:inputText>
+
                             <p></p>
                             <h:message for="number" errorClass="invalid"/>
 
                             <h:outputLabel for="count" value="Driver count"/>
                             <h:inputText id="count" value="#{furaAction.fura.driverCount}"
                                          validatorMessage="Not a digit!"
-                                         >
+                                    >
                                 <f:convertNumber integerOnly="true"/>
                             </h:inputText>
+
                             <p></p>
                             <h:message for="count" errorClass="invalid"/>
 

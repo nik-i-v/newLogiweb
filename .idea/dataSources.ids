@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - driver@localhost" uuid="67262756-1118-4f32-8b91-20bfc4ebecfb">
+    <database-info product="MySQL" version="5.5.23" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="driver"/>
+    <table name="driver_shift" schema="" catalog="driver" type="TABLE">
+      <column name="driver_shift_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="status" sqlType="ENUM" precision="8" scale="0" nullable="true" jdbcType="1"/>
+      <column name="order_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="driver_shift_id"/>
+      <foreign-key name="driver_shift_ibfk_1" columns="driver_shift_id" ref-table="drivers" ref-schema="" ref-catalog="driver" ref-columns="drivers_id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_elciarl21t8ylcor2684vmb65" columns="order_id" ref-table="orders" ref-schema="" ref-catalog="driver" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_2bitudi5n5aw8j3q41xddf5tp" table="drivers" schema="" catalog="driver" columns="driverShift_driver_shift_id"/>
+      <index name="FK_elciarl21t8ylcor2684vmb65" unique="false" columns="order_id"/>
+    </table>
+    <table name="drivers" schema="" catalog="driver" type="TABLE">
+      <column name="drivers_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="surname" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="patronymic" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="license_id" sqlType="MEDIUMTEXT" precision="16777215" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="driverShift_driver_shift_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="drivers_id"/>
+      <foreign-key name="FK_2bitudi5n5aw8j3q41xddf5tp" columns="driverShift_driver_shift_id" ref-table="driver_shift" ref-schema="" ref-catalog="driver" ref-columns="driver_shift_id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="driver_shift_ibfk_1" table="driver_shift" schema="" catalog="driver" columns="driver_shift_id"/>
+      <index name="FK_2bitudi5n5aw8j3q41xddf5tp" unique="false" columns="driverShift_driver_shift_id"/>
+    </table>
+    <table name="fura" schema="" catalog="driver" type="TABLE">
+      <column name="fura_number" sqlType="VARCHAR" precision="7" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="driver_count" sqlType="SMALLINT" precision="5" scale="0" nullable="false" jdbcType="5"/>
+      <column name="capacity" sqlType="ENUM" precision="6" scale="0" nullable="true" jdbcType="1"/>
+      <column name="status" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="furas_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="furas_id"/>
+      <exported-key name="orders_ibfk_3" table="orders" schema="" catalog="driver" columns="fura_id"/>
+    </table>
+    <table name="hibernate_sequence" schema="" catalog="driver" type="TABLE">
+      <column name="next_val" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+    </table>
+    <table name="order_info" schema="" catalog="driver" type="TABLE">
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="gps_lat" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="gps_long" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="weight" sqlType="DOUBLE" precision="22" scale="0" nullable="true" jdbcType="8"/>
+      <column name="status" sqlType="ENUM" precision="4" scale="0" nullable="true" jdbcType="1"/>
+      <column name="order_number" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="order_info_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="order_info_id"/>
+      <foreign-key name="order_info_ibfk_1" columns="order_number" ref-table="order_status" ref-schema="" ref-catalog="driver" ref-columns="order_status_id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="order_status" schema="" catalog="driver" type="TABLE">
+      <column name="order_status_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="status" sqlType="ENUM" precision="9" scale="0" nullable="true" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="order_status_id"/>
+      <foreign-key name="order_status_ibfk_1" columns="order_status_id" ref-table="orders" ref-schema="" ref-catalog="driver" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="order_info_ibfk_1" table="order_info" schema="" catalog="driver" columns="order_number"/>
+    </table>
+    <table name="orders" schema="" catalog="driver" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="fura_id" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="orders_ibfk_3" columns="fura_id" ref-table="fura" ref-schema="" ref-catalog="driver" ref-columns="furas_id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_elciarl21t8ylcor2684vmb65" table="driver_shift" schema="" catalog="driver" columns="order_id"/>
+      <exported-key name="order_status_ibfk_1" table="order_status" schema="" catalog="driver" columns="order_status_id"/>
+    </table>
+    <table name="users" schema="" catalog="driver" type="TABLE">
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="status" sqlType="ENUM" precision="14" scale="0" nullable="false" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="name"/>
+    </table>
+  </data-source>
+</component>
