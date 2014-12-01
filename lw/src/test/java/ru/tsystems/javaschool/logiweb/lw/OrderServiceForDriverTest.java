@@ -59,6 +59,70 @@ public class OrderServiceForDriverTest {
     }
 
     @Test
+    public void getGoodsStatusForDriversTest() {
+        String hql = "SELECT ds.orderId FROM DriverShift ds WHERE ds.drivers.license = :license";
+        OrderServiceForDriversBean service = new OrderServiceForDriversBean();
+        service.setEntityManager(entityManager);
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("license", 12345678901L)).thenReturn(query);
+        when(query.getSingleResult()).thenReturn(new LinkedList());
+        when(query.getSingleResult().toString()).thenReturn("1");
+        when(entityManager.find(Order.class, 1)).thenReturn(new Order());
+
+        hql = "SELECT oi FROM OrderInfo oi WHERE oi.orderNumber = :number ";
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("number", 1)).thenReturn(query);
+        service.getGoodsStatusForDrivers(12345678901L);
+    }
+
+    @Test
+    public void getGoodsListTest() {
+        String hql = "SELECT ds.orderId FROM DriverShift ds WHERE ds.drivers.license = :license";
+        OrderServiceForDriversBean service = new OrderServiceForDriversBean();
+        service.setEntityManager(entityManager);
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("license", 12345678901L)).thenReturn(query);
+        when(query.getSingleResult()).thenReturn(new LinkedList());
+        when(query.getSingleResult().toString()).thenReturn("1");
+        when(entityManager.find(Order.class, 1)).thenReturn(new Order());
+
+        hql = "SELECT oi.name FROM OrderInfo oi WHERE oi.orderNumber = :number AND oi.status = :status";
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("number", 1)).thenReturn(query);
+        when(query.setParameter("status", OrderInfo.Status.no)).thenReturn(query);
+
+        service.getGoodsList(12345678901L);
+    }
+
+    @Test
+    public void changeGoodsStatusForDriversTest() {
+        String hql = "SELECT ds.orderId FROM DriverShift ds WHERE ds.drivers.license = :license";
+        OrderServiceForDriversBean service = new OrderServiceForDriversBean();
+        service.setEntityManager(entityManager);
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("license", 12345678901L)).thenReturn(query);
+        when(query.getSingleResult()).thenReturn(new LinkedList());
+        when(query.getSingleResult().toString()).thenReturn("1");
+        when(entityManager.find(Order.class, 1)).thenReturn(new Order());
+
+        hql = "UPDATE OrderInfo oi SET oi.status = :status WHERE  oi.name = :name";
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("status", OrderInfo.Status.yes)).thenReturn(query);
+        when(query.setParameter("name", "table")).thenReturn(query);
+
+        hql = "SELECT oi.name FROM OrderInfo oi WHERE oi.orderNumber = :number AND oi.status = :status";
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("status", OrderInfo.Status.no)).thenReturn(query);
+
+        hql = "UPDATE OrderStatus os SET os.status = :status WHERE os.orderId = :number";
+        when(entityManager.createQuery(hql)).thenReturn(query);
+        when(query.setParameter("status", OrderStatus.Status.made)).thenReturn(query);
+        when(query.setParameter("number", 1)).thenReturn(query);
+
+        service.changeGoodsStatusForDrivers("table", 12345678901L);
+    }
+
+    @Test
     public void currentGoodsStatusIsNoTest() {
         String hql = "SELECT oi.name FROM OrderInfo oi WHERE oi.orderNumber = :number AND oi.status = :status";
         OrderServiceForDriversBean service = new OrderServiceForDriversBean();
