@@ -74,22 +74,32 @@ public class RestActions {
      * @param driverLicense license number of a driver
      * @return the order for a driver
      */
-//    @GET
-//    @Path("{driverLicense}/order")
-//    @javax.ws.rs.Produces(MediaType.APPLICATION_JSON)
-//    public List getOrderForDriver(@PathParam("driverLicense") Long driverLicense) {
-//        Order order =  orderServiceForDrivers.getOrderForDrivers(driverLicense);
-//        String furaNumber = order.getFura().getFuraNumber();
-//        Integer orderNumber = order.getId();
-//        List<OrderInfo> goods = order.getOrderStatus().getOrderInfo();
-//        List<DriverShift> driverShift = order.getDriverShift();
-//        List result = new ArrayList();
-//        result.add(orderNumber);
-//        result.add(driverShift);
-//        result.add(furaNumber);
-//        result.add(goods);
-//        return result;
-//    }
+    @GET
+    @Path("{driverLicense}/order")
+    @javax.ws.rs.Produces(MediaType.APPLICATION_JSON)
+    public List getOrderForDriver(@PathParam("driverLicense") Long driverLicense) {
+        Order order =  orderServiceForDrivers.getOrderForDrivers(driverLicense);
+        String furaNumber = order.getFura().getFuraNumber();
+        Integer orderNumber = order.getId();
+        List<OrderInfo> goods = order.getOrderStatus().getOrderInfo();
+        List<DriverShift> driverShift = order.getDriverShift();
+        StringBuffer drivers = new StringBuffer();
+        for (DriverShift d: driverShift){
+            drivers.append(d.getDrivers().getLicense() + ", ");
+        }
+        drivers.deleteCharAt(drivers.length()-2);
+        StringBuffer goodsList = new StringBuffer();
+        for (OrderInfo oi: goods){
+            goodsList.append("Name: " + oi.getName() + " Status: " + oi.getStatus() + ", ");
+        }
+        goodsList.deleteCharAt(goodsList.length()-2);
+        List result = new ArrayList();
+        result.add(orderNumber);
+        result.add(drivers);
+        result.add(furaNumber);
+        result.add(goodsList);
+        return result;
+    }
 
     /**
      * Changes the status of a goods.

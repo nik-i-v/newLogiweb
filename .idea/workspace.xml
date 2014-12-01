@@ -35,7 +35,7 @@
       <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\lib\shrinkwrap-api-1.2.2.jar" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\lib\shrinkwrap-descriptors-api-base-2.0.0-alpha-5.jar" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\logiweb\lw\target\lw\WEB-INF\lib\shrinkwrap-descriptors-spi-2.0.0-alpha-5.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/test/java/ru/tsystems/javaschool/logiweb/lw/OrderServiceForDriverTest.java" afterPath="$PROJECT_DIR$/lw/src/test/java/ru/tsystems/javaschool/logiweb/lw/OrderServiceForDriverTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.java" afterPath="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.java" />
     </list>
     <ignored path="logiweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,14 +69,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OrderServiceForDriverTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OrderServiceForDriverTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lw/src/test/java/ru/tsystems/javaschool/logiweb/lw/OrderServiceForDriverTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59402984" vertical-offset="1824" max-vertical-offset="3723">
+            <state vertical-scroll-proportion="0.0" vertical-offset="549" max-vertical-offset="3723">
               <caret line="119" column="43" selection-start-line="119" selection-start-column="43" selection-end-line="119" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestActions.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8985075" vertical-offset="872" max-vertical-offset="2074">
+              <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,9 +125,9 @@
         <option value="$PROJECT_DIR$/lw/src/test/java/ru/tsystems/javaschool/logiweb/lw/OrderTestAq.java" />
         <option value="$PROJECT_DIR$/lw/pom.xml" />
         <option value="$PROJECT_DIR$/lw/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.java" />
         <option value="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/service/driver/OrderServiceForDriversBean.java" />
         <option value="$PROJECT_DIR$/lw/src/test/java/ru/tsystems/javaschool/logiweb/lw/OrderServiceForDriverTest.java" />
+        <option value="$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.java" />
       </list>
     </option>
   </component>
@@ -752,125 +762,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.OrderServiceForDriverTest">
-    <configuration default="false" name="OrderTestAq" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.tsystems.javaschool.logiweb.lw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="lw" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.tsystems.javaschool.logiweb.lw" />
-      <option name="MAIN_CLASS_NAME" value="ru.tsystems.javaschool.logiweb.lw.OrderTestAq" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="OrderServiceTest.addFuraAndDriversToOrderTest_fura_is_not_suitable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.tsystems.javaschool.logiweb.lw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="lw" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.tsystems.javaschool.logiweb.lw" />
-      <option name="MAIN_CLASS_NAME" value="ru.tsystems.javaschool.logiweb.lw.OrderServiceTest" />
-      <option name="METHOD_NAME" value="addFuraAndDriversToOrderTest_fura_is_not_suitable" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="OrderServiceTest.addFuraAndDriversToOrderTest_drivers_are_not_suitable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.tsystems.javaschool.logiweb.lw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="lw" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.tsystems.javaschool.logiweb.lw" />
-      <option name="MAIN_CLASS_NAME" value="ru.tsystems.javaschool.logiweb.lw.OrderServiceTest" />
-      <option name="METHOD_NAME" value="addFuraAndDriversToOrderTest_drivers_are_not_suitable" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.tsystems.javaschool.logiweb.lw.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="lw" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ru.tsystems.javaschool.logiweb.lw" />
-      <option name="MAIN_CLASS_NAME" value="ru.tsystems.javaschool.logiweb.lw.UserServiceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JBoss Server.logiweb">
     <configuration default="false" name="OrderServiceForDriverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -880,14 +772,14 @@
       </extension>
       <module name="lw" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="PACKAGE_NAME" value="ru.tsystems.javaschool.logiweb.lw" />
       <option name="MAIN_CLASS_NAME" value="ru.tsystems.javaschool.logiweb.lw.OrderServiceForDriverTest" />
-      <option name="METHOD_NAME" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -1226,21 +1118,13 @@
         </option>
       </method>
     </configuration>
-    <list size="6">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JBoss Server.logiweb" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.OrderTestAq" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.OrderServiceTest.addFuraAndDriversToOrderTest_fura_is_not_suitable" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.OrderServiceTest.addFuraAndDriversToOrderTest_drivers_are_not_suitable" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserServiceTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.OrderServiceForDriverTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.OrderServiceForDriverTest" />
     </list>
     <recent_temporary>
-      <list size="5">
+      <list size="1">
         <item index="0" class="java.lang.String" itemvalue="JUnit.OrderServiceForDriverTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.OrderTestAq" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UserServiceTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.OrderServiceTest.addFuraAndDriversToOrderTest_drivers_are_not_suitable" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.OrderServiceTest.addFuraAndDriversToOrderTest_fura_is_not_suitable" />
       </list>
     </recent_temporary>
   </component>
@@ -1254,7 +1138,7 @@
       <created>1417251336152</created>
       <option name="number" value="Default" />
       <updated>1417251336152</updated>
-      <workItem from="1417251337847" duration="40944000" />
+      <workItem from="1417251337847" duration="42259000" />
     </task>
     <task id="LOCAL-00001" summary="2 tests order">
       <created>1417264221787</created>
@@ -1278,7 +1162,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40944000" />
+    <option name="totallyTimeSpent" value="42259000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1304,7 +1188,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38662317" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38662317" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1561,14 +1445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9641792" vertical-offset="1110" max-vertical-offset="1904">
-          <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lw/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
@@ -1619,11 +1495,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lw/src/test/java/ru/tsystems/javaschool/logiweb/lw/OrderServiceForDriverTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59402984" vertical-offset="1824" max-vertical-offset="3723">
+        <state vertical-scroll-proportion="0.0" vertical-offset="549" max-vertical-offset="3723">
           <caret line="119" column="43" selection-start-line="119" selection-start-column="43" selection-end-line="119" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lw/src/main/java/ru/tsystems/javaschool/logiweb/lw/ui/rest/RestActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8985075" vertical-offset="872" max-vertical-offset="2074">
+          <caret line="92" column="35" selection-start-line="92" selection-start-column="35" selection-end-line="92" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
