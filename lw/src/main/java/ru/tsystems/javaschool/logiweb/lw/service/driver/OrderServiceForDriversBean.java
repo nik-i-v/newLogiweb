@@ -145,19 +145,7 @@ public class OrderServiceForDriversBean implements OrderServiceForDrivers {
         return query.getSingleResult().toString();
     }
 
-    /**
-     * Gets the number of the order for certain driver
-     * @param driverId the number license of a driver
-     * @return the number of the order
-     */
-    private Integer getOrderNumberForDrivers(Long driverId) {
-        Query query = entityManager.createQuery("SELECT ds.orderId FROM DriverShift ds WHERE ds.drivers.license = :license");
-        query.setParameter("license", driverId);
-        if (query.getResultList().toString().equals(null)) {
-            throw new IllegalArgumentException("You have no orders");
-        }
-        return Integer.parseInt(query.getSingleResult().toString());
-    }
+
 
     /**
      * Checks is there any driver with the status "atWheel"
@@ -183,6 +171,20 @@ public class OrderServiceForDriversBean implements OrderServiceForDrivers {
     private Integer getDriverIdByDriverLicense(Long license) {
         Query query = entityManager.createQuery("SELECT d.driversId FROM Drivers d WHERE d.license = :license");
         query.setParameter("license", license);
+        return Integer.parseInt(query.getSingleResult().toString());
+    }
+
+    /**
+     * Gets the number of the order for certain driver
+     * @param driverId the number license of a driver
+     * @return the number of the order
+     */
+    private Integer getOrderNumberForDrivers(Long driverId) {
+        Query query = entityManager.createQuery("SELECT ds.orderId FROM DriverShift ds WHERE ds.drivers.license = :license");
+        query.setParameter("license", driverId);
+        if (query.getResultList().toString().equals(null)) {
+            throw new IllegalArgumentException("You have no orders");
+        }
         return Integer.parseInt(query.getSingleResult().toString());
     }
 

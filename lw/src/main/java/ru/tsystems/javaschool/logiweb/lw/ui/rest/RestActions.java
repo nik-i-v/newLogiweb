@@ -1,7 +1,9 @@
 package ru.tsystems.javaschool.logiweb.lw.ui.rest;
 
+import ru.tsystems.javaschool.logiweb.lw.server.entities.DriverShift;
 import ru.tsystems.javaschool.logiweb.lw.server.entities.DriverStatus;
 import ru.tsystems.javaschool.logiweb.lw.server.entities.Order;
+import ru.tsystems.javaschool.logiweb.lw.server.entities.OrderInfo;
 import ru.tsystems.javaschool.logiweb.lw.service.driver.OrderServiceForDrivers;
 import sun.net.www.http.HttpClient;
 
@@ -19,6 +21,8 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -45,7 +49,7 @@ public class RestActions {
     @Path("{driverLicense}/status")
     @javax.ws.rs.Produces({"application/xml"})
     public String getDriverStatus(@PathParam("driverLicense") Long driverLicense) {
-        return "<xml><result>" + orderServiceForDrivers.getCurrentStatusForDriver(driverLicense) + "</result></xml>";
+        return "<xml><result> Your status now is " + orderServiceForDrivers.getCurrentStatusForDriver(driverLicense) + "</result></xml>";
     }
 
     /**
@@ -58,7 +62,11 @@ public class RestActions {
     @Path("{driverLicense}/goods_with_status_no")
     @javax.ws.rs.Produces(MediaType.APPLICATION_JSON)
     public List<String> getGoodsStatus(@PathParam("driverLicense") Long driverLicense) {
-              return orderServiceForDrivers.getGoodsList(driverLicense);
+              List<String> goods = orderServiceForDrivers.getGoodsList(driverLicense);
+        if (goods.isEmpty()){
+            goods.add("You have no goods now");
+        }
+        return goods;
     }
 
     /**
@@ -66,12 +74,22 @@ public class RestActions {
      * @param driverLicense license number of a driver
      * @return the order for a driver
      */
-    @GET
-    @Path("{driverLicense}/order")
-    @javax.ws.rs.Produces(MediaType.APPLICATION_JSON)
-    public Order getOrderForDriver(@PathParam("driverLicense") Long driverLicense) {
-        return orderServiceForDrivers.getOrderForDrivers(driverLicense);
-    }
+//    @GET
+//    @Path("{driverLicense}/order")
+//    @javax.ws.rs.Produces(MediaType.APPLICATION_JSON)
+//    public List getOrderForDriver(@PathParam("driverLicense") Long driverLicense) {
+//        Order order =  orderServiceForDrivers.getOrderForDrivers(driverLicense);
+//        String furaNumber = order.getFura().getFuraNumber();
+//        Integer orderNumber = order.getId();
+//        List<OrderInfo> goods = order.getOrderStatus().getOrderInfo();
+//        List<DriverShift> driverShift = order.getDriverShift();
+//        List result = new ArrayList();
+//        result.add(orderNumber);
+//        result.add(driverShift);
+//        result.add(furaNumber);
+//        result.add(goods);
+//        return result;
+//    }
 
     /**
      * Changes the status of a goods.
@@ -79,9 +97,9 @@ public class RestActions {
      * @param driverLicense license number of a driver
      */
     @POST
-    @Path("{driverLicense}/{name}")
-    @Consumes("application/xml")
-    public String changeGoodsStatus(@PathParam("name") String name, @PathParam("driverLicense") Long driverLicense) {
+    @Path("change_goods_status/{driverLicense}/{name}")
+    @Consumes(MediaType.APPLICATION_XML)
+    public String changeGoodsStatus(@PathParam("driverLicense") Long driverLicense, @PathParam("name") String name ) {
         orderServiceForDrivers.changeGoodsStatusForDrivers(name, driverLicense);
         return "<xml><result>" + "success" + "</result></xml>";
     }
@@ -92,10 +110,10 @@ public class RestActions {
      * @param status a new status for a driver
      */
     @POST
-    @Path("changeStatus/{driverLicense}")
-    @Consumes("application/xml")
-    public String changeDriverStatus(@PathParam("driverLicense") Long driverLicense, @PathParam("status") DriverStatus status){
-        if (status.equals(DriverStatus.atWeel.toString())) {
+    @Path("changeStatus/{driverLicense}/{status}")
+    @Consumes(MediaType.APPLICATION_XML)
+    public String changeDriverStatus(@PathParam("driverLicense") Long driverLicense, @PathParam("status") String status){
+        if (status.equals("shift")) {
             changeStatus(driverLicense,DriverStatus.shift);
         } else {
             orderServiceForDrivers.isAnybodyAtWheel(driverLicense);
@@ -105,15 +123,7 @@ public class RestActions {
     }
 
     private void changeStatus(Long driverLicense, DriverStatus status) {
-        try {
-            orderServiceForDrivers.changeDriverStatusForDrivers(driverLicense, status);
-            facesContext.addMessage(null,
-                    new FacesMessage(FacesMessage.SEVERITY_INFO, "Driver status has been changed", "Driver status change successful"));
-//            currentStatus = orderServiceForDrivers.getCurrentStatusForDriver(driverLicense);
-        } catch (Exception e) {
-            String errorMessage = e.getMessage();
-            facesContext.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR,
-                    errorMessage, "Changing unsuccessful"));
-        }
+        orderServiceForDrivers.changeDriverStatusForDrivers(driverLicense, status);
+
     }
 }
