@@ -14,23 +14,25 @@
                             <em>No created orders.</em>
                         </h:panelGroup>
                         <h:form id="orderActivity" rendered="#{not empty createdOrderNumber}">
-                            <!--<h:panelGrid columns="3" id="addDrivers" rendered="#{not empty confirmedOrderNumber}">-->
+
                             <table>
                                 <tr>
-                                    <td><h:outputLabel for="orderNumber" value="Order:"/></td>
+                                    <td width="20"><h:outputLabel for="orderNumber" value="Order:"/></td>
                                     <td><h:selectOneMenu id="orderNumber" value="#{modifyOrder.orderNumber}">
                                         <f:selectItems value="#{modifyOrder.confirmedOrderNumber}"/>
                                     </h:selectOneMenu></td>
                                 </tr>
                                 <tr>
-                                    <td><h:outputLabel for="driverLicense" value="Drivers"/></td>
+                                    <td width="20"><h:outputLabel for="driverLicense" value="Drivers:"/></td>
+                                    </tr>
+                                <tr>
                                     <td><h:selectManyCheckbox id="driverLicense" value="#{modifyOrder.driversToOrder}"
                                                               layout="pageDirection" converter="javax.faces.Long">
                                         <f:selectItems value="#{driverAction.freeDrivers}"/>
                                     </h:selectManyCheckbox></td>
                                 </tr>
                                 <tr>
-                                    <td><h:outputLabel for="furaNumber" value="Wagon:"/></td>
+                                    <td width="20"><h:outputLabel for="furaNumber" value="Wagon:"/></td>
                                     <td><h:selectOneMenu id="furaNumber" value="#{modifyOrder.furaToOrder}">
                                         <f:selectItems value="#{furaAction.freeFuras}"/>
                                     </h:selectOneMenu></td>
@@ -40,7 +42,8 @@
                                     <td><h:commandButton id="add" value="Add" styleClass="but"
                                                          action="#{modifyOrder.addFuraAndDriversToOrder}" ajax="true"
                                                          rendered="true"/></td>
-
+</tr>
+                                <tr>
                                     <td><h:messages styleClass="messages" errorClass="invalid" infoClass="valid"
                                                     warnClass="warning"
                                                     globalOnly="true"/></td>
