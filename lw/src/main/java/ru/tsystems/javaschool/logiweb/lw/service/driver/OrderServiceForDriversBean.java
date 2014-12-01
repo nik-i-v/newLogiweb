@@ -8,6 +8,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  *
@@ -182,10 +183,18 @@ public class OrderServiceForDriversBean implements OrderServiceForDrivers {
     private Integer getOrderNumberForDrivers(Long driverId) {
         Query query = entityManager.createQuery("SELECT ds.orderId FROM DriverShift ds WHERE ds.drivers.license = :license");
         query.setParameter("license", driverId);
-        if (query.getResultList().toString().equals(null)) {
+        if (query.getSingleResult().toString().equals(null)) {
             throw new IllegalArgumentException("You have no orders");
         }
         return Integer.parseInt(query.getSingleResult().toString());
+    }
+
+    /**
+     * Sets an EntityManager.
+     * @param entityManager
+     */
+    public void setEntityManager(EntityManager entityManager) {
+        this.entityManager = entityManager;
     }
 
 }
